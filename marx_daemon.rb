@@ -10,7 +10,7 @@ require 'dotenv/load'
   rescue Exception => e
     puts "OOP! Bot encountered error: #{e}"
     sleep(5)
-    bot = MarxBot.new(token:"NzAzNzg3MjU0ODIwMjQxNDQ4.G2ZlUt.hyJ9lK9RqWfHYxhjjyglsM0-sFam1EKsmc1G6E")
+    bot = MarxBot.new(token: ENV['BOT_TOKEN'])
     bot.run
   end
 
