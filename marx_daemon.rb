@@ -1,17 +1,12 @@
+#$stdout.reopen("daemon.log","w")
+#$stderr.reopen("daemon_err.log","w")
+
+puts "Running marxbot at #{Time.now}"
+
 require "marxbot"
 require 'dotenv/load'
-# while true
-  bot = MarxBot.new(token: ENV['BOT_TOKEN'])
+puts "completed requirements"
 
-  begin
-    bot.run
-    puts "Marxbot closed"
-    sleep(5)
-  rescue Exception => e
-    puts "OOP! Bot encountered error: #{e}"
-    sleep(5)
-    bot = MarxBot.new(token: ENV['BOT_TOKEN'])
-    bot.run
-  end
+bot = MarxBot.new(token: ENV['BOT_TOKEN'])
 
-# end
+bot.run
