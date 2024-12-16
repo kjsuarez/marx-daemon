@@ -5,7 +5,7 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'daemons', '~> 1.4', '>= 1.4.1'
-gem 'marxbot', '~> 0.0.4'
+gem 'marxbot', '~> 0.0.6'
 gem 'pry'
 
 group :development do
