@@ -7,6 +7,6 @@ require "marxbot"
 require 'dotenv/load'
 puts "completed requirements"
 
-bot = MarxBot.new(token: ENV['BOT_TOKEN'], auto_stop: true, stop_time: 60*15)
+bot = MarxBot.new(token: ENV['BOT_TOKEN'], auto_stop: false, stop_time: 60*15)
 
 bot.run
