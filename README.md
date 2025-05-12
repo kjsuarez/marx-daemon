@@ -1,3 +1,5 @@
+## What is this
+The idea here is to provide an automatic process for running a discord bot (based on the [discordrb](https://github.com/shardlab/discordrb) gem) in the background and logging its output appropriately. Logs are periodically cleaned up to avoid memory issues.
 ### Accessing to cron jobs
 `crontab -e`
 
